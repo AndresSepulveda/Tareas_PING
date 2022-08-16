@@ -10,11 +10,11 @@ n=40;
 beta0 = 10;
 beta1 = 100;
 beta2 = 9.8;
-sigma=zeros(n,1)+0.5;
+sigma=[];
 for t=1:n
 x(t,1)=t;
+sigma(t,1)=8;  % Este es el error asociado a y
 y(t,1)=beta0+beta1*t-(1/2*beta2)*t^2+sigma(t,1)*randn(1);
-sigma(t,1)=8; Este es el error asociado a y
 end
 
 %
