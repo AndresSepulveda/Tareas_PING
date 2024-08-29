@@ -31,13 +31,13 @@ y(4)= ...
 
 % Construir la matriz de una ecuacion lineal/parabolica
 
-G = [ ones(N,1) , x ];
+G = [ ones(N,1) , x ,...];
 
 % Aplicar el error de los datos como un factor de importancia relativa.
 yw = y./sigma;
-Gw = G./[sigma,sigma];
+Gw = G./[sigma,sigma, ...];
 
-% Resolver por minimos cuadrads
+% Resolver por minimos cuadrados
 
 disp(['Solucion de Minimos Cuadrados'])
 m2 = ....
