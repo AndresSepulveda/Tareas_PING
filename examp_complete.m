@@ -95,7 +95,6 @@ end
 figure(2)
  ;
 hist(...);
-axis([60 110 0 30])
 title(['1000 valores de m(1) via Monte-Carlo'])
 
 
