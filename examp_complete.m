@@ -64,7 +64,7 @@ r = ....
 
 % Grafique el resultado
 
-xx = min(x)-1:.05:max(x)+1
+xx = min(x)-1:.05:max(x)+1;
 yy = ...
 
 figure(1)
